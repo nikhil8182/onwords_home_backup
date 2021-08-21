@@ -127,6 +127,15 @@ class _DummySettingsPageState extends State<DummySettingsPage> {
                       height: height*0.004,
                     ),
                   ),
+                  SettingsListTile(imgValue: "images/sun.png",titleTxt: "Tab Settings ",subTitleTxt: "ON ",),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 48.0),
+                    child: Divider(
+                      thickness: 1.0,
+                      color: Colors.grey,
+                      height: height*0.004,
+                    ),
+                  ),
                 ],
               ),
             ),

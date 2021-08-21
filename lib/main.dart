@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:onwords_home/home_page.dart';
+//import 'package:onwords_home/home_page.dart';
 import 'package:provider/provider.dart';
 import 'Routine_Page/task_data.dart';
+import 'login_page.dart';
 
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
       //     .copyWith(scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47)),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body:HomePage(),
+        body:LoginPage(),
       ),
       ),
     );

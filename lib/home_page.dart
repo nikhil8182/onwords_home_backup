@@ -18,8 +18,8 @@ class _HomePageState extends State<HomePage> {
 
   List page = [
     FirstPage(),
-    RoutinePage(),
     SecondDashBoard(),
+    RoutinePage(),
     DummySettingsPage(),
   ];
 
@@ -29,8 +29,9 @@ class _HomePageState extends State<HomePage> {
     // final height = MediaQuery.of(context).size.height;
     // final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor:  Color.fromRGBO(40, 36, 36, 1.0),
+      // backgroundColor:  Color.fromRGBO(40, 36, 36, 1.0),
       // backgroundColor: Color.fromRGBO(26, 28, 30, 0.6),
+      backgroundColor: Color.fromRGBO(26, 28, 30, 1.0),
       body: page[_currentIndex],
       // bottomNavigationBar: Container(
       //   padding: EdgeInsets.symmetric(horizontal: 1.0),
@@ -82,8 +83,8 @@ class _HomePageState extends State<HomePage> {
           currentIndex: _currentIndex,
           items: [
             FloatingNavbarItem(customWidget: SvgPicture.asset("images/home.svg"),title: 'Home'),
-            FloatingNavbarItem(customWidget: SvgPicture.asset("images/routine.svg"), title: 'Routine'),
             FloatingNavbarItem(customWidget: SvgPicture.asset("images/dash.svg"), title: 'Dashboard'),
+            FloatingNavbarItem(customWidget: SvgPicture.asset("images/routine.svg"), title: 'Routine'),
             FloatingNavbarItem(icon: Icons.settings, title: 'Settings'),
           ],
         ),

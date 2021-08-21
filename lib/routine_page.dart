@@ -18,6 +18,7 @@ class _RoutinePageState extends State<RoutinePage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(26, 28, 30, 0.6),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: 90.0,
         backgroundColor: Colors.transparent,
         title: Text(
