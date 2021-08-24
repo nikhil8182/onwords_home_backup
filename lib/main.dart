@@ -15,7 +15,7 @@ void main() async {
   AndroidInitializationSettings('launch_background');
   var initializationSettingsIOS = IOSInitializationSettings(
       requestAlertPermission: true,
-      requestBadgePermission: true,
+      requestBadgePermission: true,//backup code
       requestSoundPermission: true,
       onDidReceiveLocalNotification:
           (int id, String title, String body, String payload) async {});
