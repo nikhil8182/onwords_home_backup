@@ -16,7 +16,7 @@ void main() async {
   var initializationSettingsIOS = IOSInitializationSettings(
       requestAlertPermission: true,
       requestBadgePermission: true,//backup code
-      requestSoundPermission: true,
+      requestSoundPermission: true,//parthosh
       onDidReceiveLocalNotification:
           (int id, String title, String body, String payload) async {});
   var initializationSettings = InitializationSettings(
