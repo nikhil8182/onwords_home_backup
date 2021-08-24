@@ -316,7 +316,7 @@ class _SelectCardState extends State<SelectCard> {
 
     return GestureDetector(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>IndividualPage(imgValue: widget.choice.backGroundImage,)));
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>IndividualPage(imgValue: widget.choice.backGroundImage,txtValue: widget.choice.title,)));
       },
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 10.0),

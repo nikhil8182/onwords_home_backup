@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:onwords_home/installation_page.dart';
 
 import 'home_page.dart';
 
@@ -117,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                                 hintStyle: TextStyle(color: Colors.white),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
-                                      color: Colors.black, width: 2.0),
+                                      color: Colors.black, width: width*0.04),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                               ),
@@ -163,7 +164,7 @@ class _LoginPageState extends State<LoginPage> {
                                 hintStyle: TextStyle(color: Colors.white),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
-                                      color: Colors.black, width: 2.0),
+                                      color: Colors.black, width: width*0.04),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                               ),
@@ -178,7 +179,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HomePage()));
+                                      builder: (context) => InstallationPage()));
                             },
                             style: ButtonStyle(
                               padding: MaterialStateProperty.all(EdgeInsets.all(12.0)),
@@ -251,7 +252,8 @@ class _LoginPageState extends State<LoginPage> {
                             width: width*0.04,
                           ),
                           Text("Demo Login",style: GoogleFonts.inter(
-                            fontSize: 14.0,color: Colors.white60,fontWeight: FontWeight.bold
+                            fontSize: height*0.016,
+                              color: Colors.white60,fontWeight: FontWeight.bold
                           ),),
                         ],
                       ),
