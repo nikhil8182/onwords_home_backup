@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:onwords_home/tab_settings_page.dart';
+import 'package:onwords_home/settingsPage/tab_sett/tab_settings_page.dart';
 
 class DummySettingsPage extends StatefulWidget {
   @override

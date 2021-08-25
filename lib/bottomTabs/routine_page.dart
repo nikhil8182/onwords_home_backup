@@ -11,6 +11,16 @@ class RoutinePage extends StatefulWidget {
 }
 
 class _RoutinePageState extends State<RoutinePage> {
+
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration.zero, () {
+      this.showAnotherAlertDialog(context);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -45,7 +55,7 @@ class _RoutinePageState extends State<RoutinePage> {
                   },
                   icon: Icon(
                     Icons.add,
-                    size: 40.0,
+                    size: height*0.041,
                   ),
                 ),
               ],
@@ -149,6 +159,28 @@ class _RoutinePageState extends State<RoutinePage> {
         color: Color.fromRGBO(26, 28, 30, 0.6),
         child: TaskView(),
       ),
+    );
+  }
+  showAnotherAlertDialog(BuildContext context) {
+    // Create button
+    Widget okButton = TextButton(
+      child: Text("Contact"),
+      onPressed: (){},
+    );
+    // Create AlertDialog
+    AlertDialog alert = AlertDialog(
+      title: Text("Routines "),
+      content: Text(" Features are Coming Soon "),
+      // actions: [
+      //   okButton,
+      // ],
+    );
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
     );
   }
 }

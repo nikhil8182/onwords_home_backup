@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:flutter_svg/svg.dart';
+// import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:onwords_home/individual_page.dart';
+import 'package:onwords_home/firstPage/individual_page.dart';
 
 class FirstPage extends StatefulWidget {
   @override
@@ -215,12 +215,6 @@ class _FirstPageState extends State<FirstPage> {
                 ),
               ),
             ),
-            // SliverToBoxAdapter(
-            //   child: Padding(
-            //     padding: EdgeInsets.all(12.0),
-            //     child: SelectCard(choice: choices[0]),
-            //   ),
-            // )
             currentIndex
                 ? SliverGrid(
                     delegate: SliverChildBuilderDelegate(
@@ -373,21 +367,21 @@ class _SelectCardState extends State<SelectCard> {
                         height: height * 0.055,
                       ),
                       SizedBox(
-                        height: 40.0,
+                        height: height * 0.040,
                       ),
                       Text(
                         widget.choice.title,
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w900,
-                            fontSize: 13.0),
+                            fontSize: height * 0.015),
                       ),
                       Text(
                         widget.choice.subTitle,
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w900,
-                            fontSize: 10.0),
+                            fontSize: height * 0.012),
                       )
                     ],
                   ),

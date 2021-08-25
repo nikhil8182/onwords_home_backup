@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:onwords_home/installation_page.dart';
+import 'package:onwords_home/log_ins/installation_page.dart';
 
-import 'home_page.dart';
+import '../home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override

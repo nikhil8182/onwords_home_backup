@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-import 'home_page.dart';
+import '../home_page.dart';
 
 class InstallationPage extends StatefulWidget {
   @override

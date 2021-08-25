@@ -121,7 +121,7 @@ class _IndividualPageState extends State<IndividualPage> {
                     child: Text(
                       widget.txtValue,
                       style: GoogleFonts.inter(
-                        fontSize: 40.0,
+                        fontSize: height * 0.042,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -129,7 +129,7 @@ class _IndividualPageState extends State<IndividualPage> {
                   ),
 
                   SizedBox(
-                    height: 1.0,
+                    height: height * 0.001,
                   ),
 
                   Container(

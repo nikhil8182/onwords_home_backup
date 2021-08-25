@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:onwords_home/Tab_Page.dart';
+import 'package:onwords_home/settingsPage/tab_sett/Tab_Page.dart';
 
 class TabSettingsPage extends StatefulWidget {
   @override

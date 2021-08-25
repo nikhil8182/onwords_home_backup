@@ -125,30 +125,30 @@ class _RoutinePageFinalState extends State<RoutinePageFinal> {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 38.0),
-                child: Container(
-                  height: height * 0.070,
-                  width: width * 0.80,
-                  decoration: BoxDecoration(
-                      color: Color.fromRGBO(247, 179, 28, 1.0),
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: Center(
-                    child: GestureDetector(
-                      onTap: () {
-                        if (newTaskTitle == null) {
-                          showAlertDialog(context);
-                        } else {
-                          Provider.of<TaskData>(context, listen: false)
-                              .addTask(newTaskTitle);
-                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()),);
-                          //  Navigator.popAndPushNamed(context, '/');
-                          Navigator.pop(context);
-                        }
-                        setState(() {
-                          _controller.text.isEmpty
-                              ? _validate = true
-                              : _validate = false;
-                        });
-                      },
+                child: GestureDetector(
+                  onTap: () {
+                    if (newTaskTitle == null) {
+                      showAlertDialog(context);
+                    } else {
+                      Provider.of<TaskData>(context, listen: false)
+                          .addTask(newTaskTitle);
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()),);
+                      //  Navigator.popAndPushNamed(context, '/');
+                      Navigator.pop(context);
+                    }
+                    setState(() {
+                      _controller.text.isEmpty
+                          ? _validate = true
+                          : _validate = false;
+                    });
+                  },
+                  child: Container(
+                    height: height * 0.070,
+                    width: width * 0.80,
+                    decoration: BoxDecoration(
+                        color: Color.fromRGBO(247, 179, 28, 1.0),
+                        borderRadius: BorderRadius.circular(20.0)),
+                    child: Center(
                       child: Text(
                         " Done ",
                         style: GoogleFonts.inter(
@@ -162,12 +162,16 @@ class _RoutinePageFinalState extends State<RoutinePageFinal> {
               )
             ],
           ),
-        ));
+        ),
+    );
   }
 
   showAlertDialog(BuildContext context) {
     // Create button
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.white)
+      ),
       child: Text("OK"),
       onPressed: () {
         Navigator.of(context).pop();
@@ -176,8 +180,8 @@ class _RoutinePageFinalState extends State<RoutinePageFinal> {
 
     // Create AlertDialog
     AlertDialog alert = AlertDialog(
-      title: Text("Invalid declaration"),
-      content: Text("please fill Name and choose device."),
+      title: Text("Invalid Text"),
+      content: Text("please give some title."),
       actions: [
         okButton,
       ],
