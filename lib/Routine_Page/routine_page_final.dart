@@ -88,7 +88,7 @@ class _RoutinePageFinalState extends State<RoutinePageFinal> {
                 padding: EdgeInsets.symmetric(horizontal: 38.0),
                 child: Container(
                     padding: EdgeInsets.all(20.0),
-                    height: height * 0.55,
+                    height: height * 0.60,
                     width: width * 0.80,
                     decoration: BoxDecoration(
                         color: Color.fromRGBO(54, 54, 54, 1.0),

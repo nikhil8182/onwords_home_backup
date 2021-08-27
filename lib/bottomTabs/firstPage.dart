@@ -15,7 +15,7 @@ class _FirstPageState extends State<FirstPage> {
   // bool valueStatus = false;
   // int _currentIndex = 0;
   bool _pinned = true;
-  bool _snap = false;
+  // bool _snap = false;
   bool _floating = false;
 
   @override
@@ -28,18 +28,18 @@ class _FirstPageState extends State<FirstPage> {
       body: Container(
         height: height*1.0,
         width: width*1.0,
-        //color:Color.fromRGBO(26, 28, 30, 0.6),
+        color:Color.fromRGBO(26, 28, 30, 0.6),
         child: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
               automaticallyImplyLeading: false,
               // backgroundColor: Color.fromRGBO(40, 36, 36, 1.0),
               backgroundColor: Color.fromRGBO(26, 28, 30, 0.6),
-              collapsedHeight: 70.0,
+              collapsedHeight: height*0.074,
               pinned: _pinned,
               // snap: _snap,
               floating: _floating,
-              expandedHeight: 160.0,
+              expandedHeight: height*0.164,
               flexibleSpace: Flexible(
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
@@ -58,32 +58,6 @@ class _FirstPageState extends State<FirstPage> {
                         "ArunKumar",
                         style: GoogleFonts.inter(fontWeight:FontWeight.w300,color: Colors.white),
                       ),
-                      // NeumorphicText(
-                      //   "Welcome Home",
-                      //   style: NeumorphicStyle(
-                      //     depth: 2.5, //customize depth here
-                      //     color: Colors.white,
-                      //     shadowDarkColor: Colors.red, //customize color here
-                      //   ),
-                      //   textStyle: NeumorphicTextStyle(
-                      //       fontSize: 35,
-                      //       fontWeight: FontWeight.bold //customize size here
-                      //       // AND others usual text style properties (fontFamily, fontWeight, ...)
-                      //       ),
-                      // ),
-                      // NeumorphicText(
-                      //   "Arun Kumar",
-                      //   style: NeumorphicStyle(
-                      //     depth: 2.5, //customize depth here
-                      //     color: Colors.white,
-                      //     shadowDarkColor: Colors.black, //customize color here
-                      //   ),
-                      //   textStyle: NeumorphicTextStyle(
-                      //       fontSize: 25,
-                      //       fontWeight: FontWeight.normal //customize size here
-                      //       // AND others usual text style properties (fontFamily, fontWeight, ...)
-                      //       ),
-                      // ),
                     ],
                   ),
                 ),

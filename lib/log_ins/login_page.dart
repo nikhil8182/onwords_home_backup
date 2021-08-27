@@ -111,11 +111,12 @@ class _LoginPageState extends State<LoginPage> {
                               ],
                             ),
                             child: TextField(
+                              style: TextStyle(color: Colors.white),
                               decoration: InputDecoration(
                                 filled: true,
                                 fillColor: Colors.black26,
                                 hintText: "Username",
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.white30),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                       color: Colors.black, width: width*0.04),
@@ -157,11 +158,12 @@ class _LoginPageState extends State<LoginPage> {
                               ],
                             ),
                             child: TextField(
+                              style: TextStyle(color: Colors.white),
                               decoration: InputDecoration(
                                 filled: true,
                                 fillColor: Colors.black26,
                                 hintText: "Password",
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.white30),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                       color: Colors.black, width: width*0.04),
